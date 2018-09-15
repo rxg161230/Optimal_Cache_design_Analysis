@@ -3,11 +3,11 @@ In this project, the cache hierarchy on X86 architecture is fine-tuned based on 
 simulator. Gem5 is a simulator that’s a modular platform for computer-system architecture research.
 It encompasses system-level architecture as well as processor microarchitecture.
 The cache design parameters that are modified to obtain an optimized design are as follows:
-   CPU Types: timing
-   Cache levels: two levels (L1 and L2)
-   Size: L1: maximum size of 256Kb L2: maximum size of 1 Mb.
-   Associativity: 1, 2, 4, 8
-   Block size: 32 bytes, 64 bytes, 128 bytes, 256 bytes
+  - CPU Types: timing
+  - Cache levels: two levels (L1 and L2)
+  - Size: L1: maximum size of 256Kb L2: maximum size of 1 Mb.
+  - Associativity: 1, 2, 4, 8
+  - Block size: 32 bytes, 64 bytes, 128 bytes, 256 bytes
 Here, Gem 5 is used to model the different cache choices for the provided benchmarks
 using different configurations **. The performance of the CPU is analyzed in the basis of CPU
 calculated as : CPI =(𝑡𝑜𝑡𝑎𝑙 𝐼𝑛𝑠𝑡𝑟𝑢𝑐𝑡𝑖𝑜𝑛+4∗𝑖𝐿1 𝑜𝑣𝑒𝑟𝑎𝑙𝑙 𝑚𝑖𝑠𝑠𝑒𝑠+4∗𝑑𝐿1𝑜𝑣𝑒𝑟𝑎𝑙𝑙𝑚𝑖𝑠𝑠𝑒𝑠+80∗𝑑𝐿2 𝑜𝑣𝑒𝑟𝑎𝑙𝑙 𝑚𝑖𝑠𝑠𝑒𝑠 )/𝑡𝑜𝑡𝑎𝑙 𝐼𝑛𝑠𝑡𝑟𝑢𝑐𝑡𝑖𝑜𝑛
@@ -44,10 +44,10 @@ configuration was calculated and plotted for each cache kind.
 As it was provided in the project the cache size of L1 is 128kB and L2 is 1MB.The following values
 were considered for different parameters while determining the optimal cache design (in terms of
 CPI) for each of the bench marks:
- CPU type: “Timing”
- L1 instruction cache: 128KB.
- L1 data cache: 128KB
- L2 cache: 1Mb, 2Mb
- Block size: 32 bytes, 64bytes, 128bytes and 256 bytes.
- Associativity of L1 cache as 1-way, 2-way, 4-way, 8-way,16-way
- Associativity of L2 cache as 2-way and 4-way
+- CPU type: “Timing”
+- L1 instruction cache: 128KB.
+- L1 data cache: 128KB
+- L2 cache: 1Mb, 2Mb
+- Block size: 32 bytes, 64bytes, 128bytes and 256 bytes.
+- Associativity of L1 cache as 1-way, 2-way, 4-way, 8-way,16-way
+- Associativity of L2 cache as 2-way and 4-way
