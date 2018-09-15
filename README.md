@@ -8,6 +8,7 @@ The cache design parameters that are modified to obtain an optimized design are 
   - Size: L1: maximum size of 256Kb L2: maximum size of 1 Mb.
   - Associativity: 1, 2, 4, 8
   - Block size: 32 bytes, 64 bytes, 128 bytes, 256 bytes
+  
 Here, Gem 5 is used to model the different cache choices for the provided benchmarks
 using different configurations **. The performance of the CPU is analyzed in the basis of CPU
 calculated as : CPI =(𝑡𝑜𝑡𝑎𝑙 𝐼𝑛𝑠𝑡𝑟𝑢𝑐𝑡𝑖𝑜𝑛+4∗𝑖𝐿1 𝑜𝑣𝑒𝑟𝑎𝑙𝑙 𝑚𝑖𝑠𝑠𝑒𝑠+4∗𝑑𝐿1𝑜𝑣𝑒𝑟𝑎𝑙𝑙𝑚𝑖𝑠𝑠𝑒𝑠+80∗𝑑𝐿2 𝑜𝑣𝑒𝑟𝑎𝑙𝑙 𝑚𝑖𝑠𝑠𝑒𝑠 )/𝑡𝑜𝑡𝑎𝑙 𝐼𝑛𝑠𝑡𝑟𝑢𝑐𝑡𝑖𝑜𝑛
